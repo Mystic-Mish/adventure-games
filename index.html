@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure games</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bot.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ready for a Challenge???</h1>
+        <h3>Let's Play!!!</h3>
+    </header>
+    <section class="home">
+        <p>I presume you are here because you want to play, well that's great.</p>
+        <p>I also love playing, writing and exploring.</p>
+        <p>Browse the list of games that we have and see which one you like most.</p>
+        <p>The games are fun, interactive and awesome.</p>
+        <p>Losing is part of learning not failing and because of that, there will be prices for those who
+            make it till the end and for those who will unfortunately not make it.
+        </p>
+        <p>Feeling stuck, our friendly virtual assistant, Adventure is here to help.</p>
+        <p>Feel free to share worldwide if you love our games.</p>
+        <p>Below you will find an overview of the games we do offer</p>
+
+        <hr>
+    </section>
+    <section>
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible">Adventure</button>
+            <div class="content">
+                <div class="full-chat-block">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- User input box -->
+                            <div class="input">
+                                <input type="text" id="userBox" onkeydown="if(event.keyCode == 13){ talk()}"
+                                    placeholder="What do you need today?" />
+                            </div>
+                            <p id="chatLog">Responses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="js/bot.js"></script>
+</body>
+
+</html>
